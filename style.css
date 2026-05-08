@@ -7,3 +7,21 @@
     padding: 20px;
     box-sizing: border-box;
 }
+.Form-group 
+{
+    display: flex;
+    flex-direction : row;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+input 
+{
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+}
+label 
+{
+    font-size: 24px;
+    font-weight: bold;
+}
