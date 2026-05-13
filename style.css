@@ -7,6 +7,15 @@
     padding: 20px;
     box-sizing: border-box;
 }
+#second-container 
+{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
 .Form-group 
 {
     display: flex;
