@@ -3,54 +3,55 @@
     <title>Personal Home Workout Fitness Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="container">
-        <h1>Personal Home Workout Fitness Guide</h1>
-        <h2>Enter Your stats here :-</h2>
-        <div class="Form-Group">
-            <label>Age :</label>
-            <input type="number" id="age" placeholder="Enter Age (15-80)" min="15" max="80">
-        </div>
-        <div class="Form-group">
-            <label>Gender :</label>
-            <select id="Gender">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
-        </div>
-        <div class="Form-Group">
-            <label>Height :</label>
-            <input type="number" id="height" placeholder="Enter Height in cm" min="0" max="272">
-        </div>
-        <div class="Form-Group">
-            <label>Weight :</label>
-            <input type="number" id="weight" placeholder="Enter Weight in kg" min="0" max="635">
-        </div>
-        <div class="Form-group">
-            <label>Activity Level :</label>
-            <select id="activity">
-                <option value="low">Sedentary: Little or No Exercise</option>
-                <option value="mid">Light: Exercise 1-3 times/week</option>
-                <option value="abv-avg">Moderate: Exercise 4-5 times/week</option>
-                <option value="high">Active: Daily Exercise or Intense Exercise 3-4 times/week</option>
-            </select>
-        </div>
-        <div class="Form-group">
-            <label>Experience :</label>
-            <select id="Experience">
-                <option value="beg">Beginner</option>
-                <option value="inter">Intermediate</option>
-                <option value="advance">Advanced</option>
-            </select>
-        </div>
+    <body>
+        <div id="container">
+            <h1>Personal Home Workout Fitness Guide</h1>
+            <h2>Enter Your stats here :-</h2>
+            <div class="Form-Group">
+                <label>Age :</label>
+                <input type="number" id="age" placeholder="Enter Age (15-80)" min="15" max="80">
+            </div>
+            <div class="Form-group">
+                <label>Gender :</label>
+                <select id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="Form-Group">
+                <label>Height :</label>
+                <input type="number" id="height" placeholder="Enter Height in cm" min="0" max="272">
+            </div>
+            <div class="Form-Group">
+                <label>Weight :</label>
+                <input type="number" id="weight" placeholder="Enter Weight in kg" min="0" max="635">
+            </div>
+            <div class="Form-group">
+                <label>Activity Level :</label>
+                <select id="activity">
+                    <option value="1.2">Sedentary: Little or No Exercise</option>
+                    <option value="1.375">Light: Exercise 1-3 times/week</option>
+                    <option value="1.55">Moderate: Exercise 4-5 times/week</option>
+                    <option value="1.725">Active: Daily Exercise or Intense Exercise 3-4 times/week</option>
+                </select>
+            </div>
+            <div class="Form-group">
+                <label>Experience :</label>
+                <select id="Experience">
+                    <option value="beg">Beginner</option>
+                    <option value="inter">Intermediate</option>
+                    <option value="advance">Advanced</option>
+                </select>
+            </div>
 
-        <label>Are you looking to ?</label>
-        <div class="Form-group">
-            <button>Bulk</button>
-            <button>Maintain</button>
-            <button>Cut</button>
+            <label>Are you looking to ?</label>
+            <div class="Form-group">
+                <button onclick="start(this)">Bulk</button>
+                <button onclick="start(this)">Maintain</button>
+                <button onclick="start(this)">Cut</button>
+            </div>
         </div>
-    </div>
-
-</body>
+        <script src="script.js"></script>
+    </body>
+</html>
 
