@@ -15,6 +15,7 @@
     min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
+    gap:20px;
 }
 .Form-group 
 {
@@ -63,4 +64,10 @@ button:hover {
   background-color: #e0e0e0; /* Slightly darker gray */
   transform: translateY(-2px); /* Makes it "pop" up */
   transition: 0.2s;
+}
+#cals
+{
+    white-space : pre-line;
+    margin-bottom : 10px;
+    margin-top : 10px;
 }

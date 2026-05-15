@@ -16,7 +16,30 @@ function start(btn)
     document.getElementById("second-container").style.display="flex";
 
     document.getElementById("goal").textContent= "Goal Chosen : " + goal; 
-    document.getElementById("maintenance").textContent= "Maintenance calories : "+Math.round(maintenance) + " calories";
+    let mains=Math.round(maintenance);
+    document.getElementById("maintenance").textContent= "Maintenance calories : "+mains + " calories";
     
-
+    if (btn.textContent == "Bulk" || btn.textContent == "Cut") {
+    if (btn.textContent == "Bulk") {
+        document.getElementById("cals").textContent = 
+        `Light Bulk (+100 to +250) : ${mains + 100} to ${mains + 250} calories
+        \n
+        Moderate Bulk (+300 to +500) : ${mains + 300} to ${mains + 500} calories
+        \n
+        Heavy Bulk (+500 to +1000) : ${mains + 500} to ${mains + 1000} calories`;
+    } else {
+        document.getElementById("cals").textContent = 
+        `Light Cut (-100 to -300) : ${mains - 100} to ${mains - 300} calories
+        \n
+        Moderate Cut (-500) : ${mains - 500} calories
+        \n
+        Heavy Cut (-750 to -1000) : ${mains - 750} to ${mains - 1000} calories`;
+    }
 }
+}
+function back()
+{
+    document.getElementById("second-container").style.display="none"
+    document.getElementById("container").style.display="flex";
+}
+
